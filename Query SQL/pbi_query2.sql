@@ -3,8 +3,7 @@ select
 		when gender = 0 then 'Wanita'
 		when gender = 1 then 'Pria'
 	end gender,
-	round(avg(age),
-	2) "AVG Age"
+	concat(round(avg(age)), ' Tahun') "AVG Age"
 from
 	customers c
 group by

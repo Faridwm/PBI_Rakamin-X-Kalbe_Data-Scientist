@@ -1,6 +1,6 @@
 select
 	"Marital Status",
-	round(avg(age), 2) "AVG Age"
+	concat(round(avg(age)), ' Tahun') "AVG Age"
 from
 	customers c
 where
